@@ -1,0 +1,93 @@
+.familia-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1.1rem 1.25rem;
+  background: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-left: 4px solid var(--cor-rosa);
+  border-radius: var(--raio);
+}
+
+.familia-card__topo {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.familia-card__topo h2 {
+  font-size: 1.45rem;
+  word-break: break-word;
+}
+
+.familia-card__contagem {
+  flex-shrink: 0;
+  padding: 0.15rem 0.7rem;
+  border-radius: 999px;
+  background: var(--cor-rosa-claro);
+  color: var(--cor-rosa-escuro);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.familia-card__alerta {
+  margin: 0;
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+  background: #fff4e0;
+  color: #7a4b00;
+  font-size: 0.85rem;
+}
+
+.familia-card__integrantes {
+  margin: 0;
+  padding-left: 1.2rem;
+  columns: 1;
+}
+
+.familia-card__rodape {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--cor-borda);
+}
+
+.familia-card__data {
+  font-size: 0.85rem;
+  color: var(--cor-texto-suave);
+}
+
+.familia-card__acoes {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.familia-card__acoes button {
+  border: 1px solid var(--cor-borda);
+  background: var(--cor-superficie);
+  border-radius: 999px;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.familia-card__acoes button:hover {
+  border-color: var(--cor-rosa-escuro);
+  color: var(--cor-rosa-escuro);
+}
+
+.familia-card__acoes .familia-card__excluir:hover {
+  border-color: var(--cor-erro);
+  color: var(--cor-erro);
+}
+
+@media (min-width: 640px) {
+  .familia-card__integrantes {
+    columns: 2;
+  }
+}

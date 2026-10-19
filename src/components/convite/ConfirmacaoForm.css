@@ -1,0 +1,102 @@
+.confirmacao-form,
+.revisao,
+.confirmacao-sucesso {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.participantes {
+  border: 1px dashed var(--cor-rosa);
+  border-radius: var(--raio);
+  padding: 1rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.participantes legend {
+  padding: 0 0.4rem;
+  font-family: var(--fonte-titulo);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--cor-rosa-escuro);
+}
+
+.revisao h3,
+.confirmacao-sucesso h3 {
+  font-size: 1.6rem;
+  color: var(--cor-rosa-escuro);
+}
+
+.revisao__dados {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.3rem 1rem;
+  margin: 0;
+}
+
+.revisao__dados dt {
+  color: var(--cor-texto-suave);
+}
+
+.revisao__dados dd {
+  margin: 0;
+  font-weight: 700;
+}
+
+.revisao__lista {
+  margin: 0;
+  padding: 0.8rem 0.8rem 0.8rem 2.2rem;
+  background: var(--cor-creme);
+  border-radius: 10px;
+}
+
+.revisao__lista li + li {
+  margin-top: 0.25rem;
+}
+
+.revisao__acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: flex-end;
+}
+
+.confirmacao-sucesso {
+  text-align: center;
+  background: var(--cor-sucesso-fundo);
+  border-radius: var(--raio);
+  padding: 1.5rem 1rem;
+}
+
+.confirmacao-sucesso h3 {
+  color: var(--cor-sucesso);
+}
+
+.confirmacao-sucesso p {
+  margin: 0;
+}
+
+.confirmacao-sucesso ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+}
+
+.confirmacao-sucesso__nota {
+  font-size: 0.9rem;
+  color: var(--cor-texto-suave);
+}
+
+.confirmacao-sucesso .botao {
+  align-self: center;
+}
+
+@media (max-width: 420px) {
+  .revisao__acoes .botao {
+    flex: 1 1 100%;
+  }
+}

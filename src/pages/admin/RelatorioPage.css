@@ -1,0 +1,72 @@
+.relatorio {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.relatorio__acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.relatorio__ajuda {
+  margin: 0;
+  color: var(--cor-texto-suave);
+}
+
+.relatorio__documento {
+  padding: 1.5rem 1.25rem;
+  background: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+}
+
+.relatorio__documento h2 {
+  text-align: center;
+  font-size: 1.6rem;
+  letter-spacing: 0.04em;
+}
+
+.relatorio__data {
+  text-align: center;
+  color: var(--cor-texto-suave);
+  margin: 0.25rem 0 1.25rem;
+}
+
+.relatorio__lista {
+  margin: 0;
+  padding-left: 2.6rem;
+}
+
+.relatorio__lista li {
+  padding: 0.3rem 0;
+  border-bottom: 1px solid #f3ece6;
+}
+
+.relatorio__nome {
+  font-weight: 600;
+}
+
+.relatorio__familia {
+  color: var(--cor-texto-suave);
+}
+
+.relatorio__total {
+  margin: 1.25rem 0 0;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+@media print {
+  .admin__topo,
+  .relatorio__cabecalho,
+  .relatorio__ajuda {
+    display: none;
+  }
+
+  .relatorio__documento {
+    border: none;
+    padding: 0;
+  }
+}

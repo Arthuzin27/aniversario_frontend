@@ -1,0 +1,117 @@
+.admin {
+  min-height: 100vh;
+  background: #faf7f4;
+}
+
+.admin__topo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+  padding: 0.9rem 1rem;
+  background: var(--cor-superficie);
+  border-bottom: 1px solid var(--cor-borda);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.admin__marca {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin__marca-titulo {
+  font-family: var(--fonte-titulo);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--cor-rosa-escuro);
+}
+
+.admin__marca-sub {
+  font-size: 0.8rem;
+  color: var(--cor-texto-suave);
+}
+
+.admin__nav {
+  display: flex;
+  gap: 0.25rem;
+  order: 3;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.admin__nav a {
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  color: var(--cor-texto);
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.admin__nav a:hover {
+  background: var(--cor-rosa-claro);
+}
+
+.admin__nav a.active {
+  background: var(--cor-rosa-escuro);
+  color: #fff;
+}
+
+.admin__usuario {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--cor-texto-suave);
+}
+
+.admin__sair {
+  border: 1px solid var(--cor-borda);
+  background: transparent;
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  cursor: pointer;
+}
+
+.admin__sair:hover {
+  border-color: var(--cor-rosa-escuro);
+  color: var(--cor-rosa-escuro);
+}
+
+.admin__conteudo {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+/* Cabeçalho comum às páginas renderizadas dentro do layout */
+.pagina-admin__cabecalho {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.pagina-admin__cabecalho h1 {
+  font-size: 2rem;
+  color: var(--cor-rosa-escuro);
+}
+
+@media (min-width: 768px) {
+  .admin__topo {
+    padding: 0.9rem 2rem;
+  }
+
+  .admin__nav {
+    order: 0;
+    width: auto;
+  }
+
+  .admin__conteudo {
+    padding: 2rem;
+  }
+}

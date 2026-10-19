@@ -1,0 +1,63 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: rgba(67, 52, 58, 0.45);
+}
+
+.modal__caixa {
+  width: 100%;
+  max-height: 92vh;
+  overflow-y: auto;
+  padding: 1.25rem;
+  background: var(--cor-superficie);
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.modal__topo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.modal__topo h2 {
+  font-size: 1.6rem;
+  color: var(--cor-rosa-escuro);
+}
+
+.modal__fechar {
+  border: none;
+  background: transparent;
+  font-size: 1.8rem;
+  line-height: 1;
+  padding: 0 0.3rem;
+  cursor: pointer;
+  color: var(--cor-texto-suave);
+}
+
+.modal__acoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .modal {
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .modal__caixa {
+    max-width: 34rem;
+    border-radius: 20px;
+    padding: 1.75rem;
+  }
+}

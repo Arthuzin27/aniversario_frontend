@@ -1,0 +1,26 @@
+.paginacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 0.95rem;
+}
+
+.paginacao button {
+  border: 1px solid var(--cor-borda);
+  background: var(--cor-superficie);
+  border-radius: 999px;
+  padding: 0.45rem 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.paginacao button:hover:not(:disabled) {
+  border-color: var(--cor-rosa-escuro);
+  color: var(--cor-rosa-escuro);
+}
+
+.paginacao button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
